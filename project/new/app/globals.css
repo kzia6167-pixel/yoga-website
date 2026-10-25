@@ -1,0 +1,161 @@
+body{
+    background-color: #077054 !important;
+}
+
+@media(max-width:480px){
+    .navbar-nav{
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f9f6;
+  font-family: 'Courier Prime', Courier, monospace;
+}
+
+/* Outer Container */
+.yoga-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Main Responsive Card Layout */
+.yoga-card {
+  display: flex;
+  flex-direction: column-reverse; /* Mobile-first: Image on top, text below */
+  width: 100%;
+  max-width: 1100px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  margin: 0 auto;
+}
+
+/* Left Content Area */
+.yoga-content {
+  flex: 1;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.yoga-title {
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: clamp(3rem, 8vw, 5.5rem); /* Dynamically scales font size */
+  color: #3b873c; /* Vibrant green color */
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+/* Lavender Divider */
+.yoga-accent-line {
+  width: 160px;
+  height: 6px;
+  background-color: #d8b4f8; /* Pale purple line */
+  margin-bottom: 25px;
+}
+
+.yoga-subtitle {
+  font-family: 'Courier Prime', Courier, monospace;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  color: #3b873c;
+  line-height: 1.3;
+  font-weight: 400;
+}
+
+/* Right Image Area */
+.yoga-image-wrapper {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.yoga-hero-img {
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain; /* Keeps the entire cutout image visible without clipping */
+}
+
+/* --- Media Queries for Tablets and Desktop Screens --- */
+@media (min-width: 768px) {
+  .yoga-card {
+    flex-direction: row; /* Split screen layout for desktop */
+    min-height: 550px;
+  }
+
+  .yoga-content {
+    padding: 60px;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .yoga-accent-line {
+    margin: 0 0 35px 0; /* Left-align the line on desktop */
+  }
+
+  .yoga-image-wrapper {
+    width: 50%;
+  }
+
+  .yoga-hero-img {
+    max-height: 550px;
+    object-fit: cover; /* Adjusts beautifully on larger screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-title {
+  font-family: 'Andada Pro', serif;
+  font-weight: 400;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  color: #7fa985; /* Muted sage green heading */
+  margin-bottom: 40px;
+}
+
+.text-block {
+  margin-bottom: 35px;
+}
+
